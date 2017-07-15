@@ -1,0 +1,27 @@
+{
+    "name": "kaoken/laravel-markdown-it",
+    "description": "A thing for using PHP version markdown-it in Laravel 5.x.",
+    "keywords": [
+        "laravel","markdown-it","markdown"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0.0",
+	    "laravel/framework": "5.4.*",
+        "kaoken/markdown-it-php":"8.*"
+    },
+    "authors": [
+        {
+            "name": "kaoken",
+            "homepage": "https://github.com/kaoken/laravel-markdown-it"
+        }
+    ],
+    "replace": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Kaoken\\": "src/"
+        }
+    }
+}

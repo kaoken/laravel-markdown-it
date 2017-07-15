@@ -1,0 +1,170 @@
+<?php
+
+
+return [
+    'set_options_rules' => 'default',
+
+    'options_rules_group' =>[
+        'default' => [
+            'options'=> [
+                'html'=>         true,        // Enable HTML tags in source
+                'xhtmlOut'=>     true,        // Use '/' to close single tags (<br />)
+                'breaks'=>       true,        // Convert '\n' in paragraphs into <br>
+                'langPrefix'=>   'language-',  // CSS language prefix for fenced blocks
+                'linkify'=>      true,        // autoconvert URL-like texts to links
+
+                // Enable some language-neutral replacements + quotes beautification
+                'typographer'=>  false,
+
+                // Double + single quotes replacement pairs, when typographer enabled,
+                // and smartquotes on. Could be either a String or an Array.
+                //
+                // For example, you can use '«»„“' for Russian, '„“‚‘' for German,
+                // and ['«\xA0', '\xA0»', '‹\xA0', '\xA0›'] for French (including nbsp).
+                'quotes'=> '“”‘’', /* “”‘’ */
+
+                // Highlighter function. Should return escaped HTML,
+                // or '' if the source string is not changed and should be escaped externaly.
+                // If result starts with <pre... internal wrapper is skipped.
+                //
+                // function (/*str, lang*/) { return ''; }
+                //
+                'highlight'=> null,
+
+                'maxNesting'=>   100            // Internal protection, recursion limit
+            ],
+            /**
+             * Manage rules!
+             * `'enable'` adds the rule you want to enable.
+             * `'disable'` adds the rule you want to disable.
+             * default all rules are enabled.
+             * @see https://github.com/markdown-it/markdown-it/tree/master/benchmark/samples
+             */
+            'enable' => [
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/inline-autolink.md
+                 */
+                'autolink',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/inline-backticks.md
+                 */
+                'backticks',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-bq-flat.md
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-bq-nested.md
+                 */
+                'blockquote',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-code.md
+                 */
+                'code',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/inline-em-flat.md
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/inline-em-nested.md
+                 */
+                'emphasis',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/inline-entity.md
+                 */
+                'entity',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/inline-escape.md
+                 */
+                'escape',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-fences.md
+                 */
+                'fence',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-heading.md
+                 */
+                'heading',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-hr.md
+                 */
+                'hr',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-html.md
+                 */
+                'html_block',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/inline-html.md
+                 */
+                'html_inline',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/inline-links-flat.md
+                 */
+                'image',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-lheading.md
+                 */
+                'lheading',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/inline-links-flat.md
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/inline-links-nested.md
+                 */
+                'link',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-list-flat.md
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-list-nested.md
+                 */
+                'list',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/inline-newlines.md
+                 */
+                'newline',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-ref-flat.md
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-ref-list.md
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-ref-nested.md
+                 */
+                'reference',
+                /**
+                 * @see https://github.com/markdown-it/markdown-it/blob/master/benchmark/samples/block-tables.md
+                 */
+                'table'
+            ],
+            'disable' => [
+
+            ]
+        ],
+        /**
+         * Add options and rules.
+         */
+        /*
+        'example' => [
+            'options'=> [
+                'html'=>         false,
+                'xhtmlOut'=>     false,
+                'breaks'=>       false,
+                'langPrefix'=>   'language-',
+                'linkify'=>      false,
+                'typographer'=>  false
+            ],
+            'enable' => [
+                'backticks',
+                'blockquote',
+                'emphasis',
+                'heading',
+                'list',
+                'newline',
+            ],
+            'disable' => [
+                'autolink',
+                'code',
+                'entity',
+                'escape',
+                'fence',
+                'hr',
+                'html_block',
+                'html_inline',
+                'image',
+                'lheading',
+                'link',
+                'reference',
+                'table'
+            ]
+        ]
+        */
+    ]
+];
