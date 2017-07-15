@@ -39,7 +39,7 @@ class MarkdownItServiceProvider extends ServiceProvider
         $path = config_path('markdownit.php');
 
         if ( $this->app instanceof FoundationApplication && $this->app->runningInConsole() && !file_exists($path) ) {
-            $srcPath=__DIR__.'/../Config/markdownit.stub';
+            $srcPath=__DIR__.'/Console/stubs/markdownit.stub';
             $this->publishes([$srcPath => $path]);
         } else if ($this->app instanceof LumenApplication) {
             $this->app->configure('markdownit');
