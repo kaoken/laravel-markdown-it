@@ -4,9 +4,9 @@
 [![composer version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/kaoken/laravel-markdown-it)
 [![licence](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/kaoken/laravel-markdown-it)
 [![php version](https://img.shields.io/badge/Laravel-≧5.4.0-red.svg)](https://github.com/kaoken/laravel-markdown-it)
-[![php version](https://img.shields.io/badge/php%20version-≧7.0.0-red.svg)](https://github.com/kaoken/laravel-markdown-it)
+[![php version](https://img.shields.io/badge/php%20version-≧5.6.4-red.svg)](https://github.com/kaoken/laravel-markdown-it)
 
-Laravel 5.4 以上を対象とした  [PHP 版 markdown-it](https://github.com/kaoken/markdown-it-php)をLaravelで簡単に使用できるようにした。
+Laravel 5.4 以上を対象とした  [PHP 版 markdown-it](https://github.com/kaoken/markdown-it-php)をLaravelで簡単に使用できるようにした。  
 
 
 __コンテンツ一覧__
@@ -245,7 +245,7 @@ class hoge{
 		// `default`のオプションとルールのグループがセットされている。
 		$result1 = MarkdownIt::render('# markdown-it rulezz!');
 		// `example`のオプションとルールのグループがセットされる。
-		$result2 = MarkdownIt::setOptionGroup("example")
+		$result2 = MarkdownIt::setOptionsRules("example")
                              ->render('# markdown-it rulezz!');
 	}
 }
@@ -261,7 +261,7 @@ class hoge{
 		// `default`のオプションとルールのグループがセットされている。
 		$result1 = MarkdownIt::renderInline('__markdown-it__ rulezz!');
 		// `example`のオプションとルールのグループがセットされる。
-		$result2 = MarkdownIt::setOptionGroup("example")
+		$result2 = MarkdownIt::setOptionsRules("example")
                              ->renderInline('__markdown-it__ rulezz!');
 	}
 }

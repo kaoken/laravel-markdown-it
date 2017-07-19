@@ -169,7 +169,7 @@ class MarkdownItManager
      * @param string $name Group name of the options and rules.
      * @return $this
      */
-    public function setOptionGroup(string $name)
+    public function setOptionsRules(string $name)
     {
         $this->optionsRulesGroup = $name;
 
