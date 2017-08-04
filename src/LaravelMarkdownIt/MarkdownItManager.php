@@ -40,7 +40,7 @@ class MarkdownItManager
         $this->markdown = new MarkdownIt();
         $this->optionsRulesGroup = $this->app->config->get('markdownit.set_options_rules');
 
-        $this->setOptionGroup($this->optionsRulesGroup);
+        $this->setOptionsRules($this->optionsRulesGroup);
     }
 
 
