@@ -1,12 +1,11 @@
 # laravel-markdown-it
 
 [![Build Status](https://img.shields.io/travis/markdown-it/markdown-it/master.svg?style=flat)](https://github.com/kaoken/laravel-markdown-it)
-[![composer version](https://img.shields.io/badge/version-1.0.3-blue.svg)](https://github.com/kaoken/laravel-markdown-it)
+[![composer version](https://img.shields.io/badge/version-1.0.4-blue.svg)](https://github.com/kaoken/laravel-markdown-it)
 [![licence](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/kaoken/laravel-markdown-it)
-[![php version](https://img.shields.io/badge/Laravel-≧5.4.0-red.svg)](https://github.com/kaoken/laravel-markdown-it)
-[![php version](https://img.shields.io/badge/php%20version-≧5.6.4-red.svg)](https://github.com/kaoken/laravel-markdown-it)
+[![Laravel version](https://img.shields.io/badge/Laravel-≧5.5.0-red.svg)](https://github.com/kaoken/laravel-markdown-it)
 
-Laravel 5.4 以上を対象とした  [PHP 版 markdown-it](https://github.com/kaoken/markdown-it-php)をLaravelで簡単に使用できるようにした。  
+Laravel 5.5 以上を対象とした  [PHP 版 markdown-it](https://github.com/kaoken/markdown-it-php)をLaravelで簡単に使用できるようにした。  
 
 
 __コンテンツ一覧__
