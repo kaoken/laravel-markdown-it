@@ -1,7 +1,7 @@
 # laravel-markdown-it
 
 [![Build Status](https://img.shields.io/travis/markdown-it/markdown-it/master.svg?style=flat)](https://github.com/kaoken/laravel-markdown-it)
-[![composer version](https://img.shields.io/badge/version-1.0.4-blue.svg)](https://github.com/kaoken/laravel-markdown-it)
+[![composer version](https://img.shields.io/badge/version-1.0.5-blue.svg)](https://github.com/kaoken/laravel-markdown-it)
 [![licence](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/kaoken/laravel-markdown-it)
 [![Laravel version](https://img.shields.io/badge/Laravel-≧5.5.0-red.svg)](https://github.com/kaoken/laravel-markdown-it)
 
@@ -43,7 +43,7 @@ composer update
 
     'aliases' => [
         ...
-        'MarkdownIt' => Kaoken\LaravelMarkdownIt\Facades\MarkdownIt::class,
+        'MarkdownIt' => Kaoken\LaravelMarkdownIt\Facade\MarkdownIt::class,
     ],
 ```
 ### コマンド
