@@ -50,7 +50,7 @@ composer update
 ### artisan command
 
 ```bash
-php artisan vender:publish
+php artisan vendor:publish
 ```
 By executing the above command, `markdownit.php` is created in the`config` directory.
 

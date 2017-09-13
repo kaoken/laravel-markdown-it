@@ -49,7 +49,7 @@ composer update
 ### コマンド
 
 ```bash
-php artisan vender:publish
+php artisan vendor:publish
 ```
 上記コマンドを実行することによって、`config`ディレクトリに`markdownit.php`が作られる。
 
