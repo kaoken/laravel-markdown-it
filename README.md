@@ -1,9 +1,10 @@
 # laravel-markdown-it
 
 [![Build Status](https://img.shields.io/travis/markdown-it/markdown-it/master.svg?style=flat)](https://github.com/kaoken/laravel-markdown-it)
-[![composer version](https://img.shields.io/badge/version-1.6.0-blue.svg)](https://github.com/kaoken/laravel-markdown-it)
+[![composer version](https://img.shields.io/badge/version-2.6.0-blue.svg)](https://github.com/kaoken/laravel-markdown-it)
 [![licence](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/kaoken/laravel-markdown-it)
-[![Laravel version](https://img.shields.io/badge/Laravel-≧7.3.4-red.svg)](https://github.com/kaoken/laravel-markdown-it)
+[![PHP version](https://img.shields.io/badge/PHP-≧7.3.4-red.svg)](https://github.com/kaoken/laravel-markdown-it)
+[![Laravel version](https://img.shields.io/badge/Laravel-≧6.0-red.svg)](https://github.com/kaoken/laravel-markdown-it)
 
 This target Laravel 6.0 and higher, making  [PHP version markdown-it](https://github.com/kaoken/markdown-it-php) easy to use with Laravel.
 
@@ -24,7 +25,7 @@ Add to `composer.json` as follows
 ```composer.json
 "require": {
     ...
-	"kaoken/laravel-markdown-it":"^1.0"
+	"kaoken/laravel-markdown-it":"^2.0"
 }
 ```
 Then update!

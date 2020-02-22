@@ -8,7 +8,7 @@
     "license": "MIT",
     "require": {
         "php": ">=7.3.6",
-	    "laravel/framework": "6.0.*,6.2.*,6.4.*,6.8.*,6.12.*",
+	    "laravel/framework": "6.0.*|6.2.*|6.4.*|6.8.*|6.12.*",
         "kaoken/markdown-it-php":"10.*"
     },
     "authors": [
